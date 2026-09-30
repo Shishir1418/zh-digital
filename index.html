@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZH Digital — SEO & Digital Growth Agency</title>
+<meta name="description" content="ZH Digital helps startups, SaaS, e-commerce and local businesses grow organic traffic through data-driven SEO, content, and digital growth strategy.">
+<meta property="og:title" content="ZH Digital — SEO & Digital Growth Agency">
+<meta property="og:description" content="Turn search traffic into sustainable growth.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://zhdigital.example.com/">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fbfcff;--fg:#0b0f1c;--muted:#5b6478;--card:#f3f5fb;--card2:#ffffff;--line:#e3e7f3;--accent:#4f46e5;--accent2:#0ea5a0;--hero:#0b0f1c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070a12;--fg:#eef1fb;--muted:#9aa3bd;--card:#0f1526;--card2:#131a30;--line:#1f2740;--accent:#7c8bff;--accent2:#2fd6c4;--hero:#05070d}}
+:root[data-theme="dark"]{--bg:#070a12;--fg:#eef1fb;--muted:#9aa3bd;--card:#0f1526;--card2:#131a30;--line:#1f2740;--accent:#7c8bff;--accent2:#2fd6c4;--hero:#05070d}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(251,252,255,.8);backdrop-filter:blur(10px) saturate(150%);border-bottom:1px solid var(--line)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .topbar{background:rgba(7,10,18,.72)}}
+:root[data-theme="dark"] .topbar{background:rgba(7,10,18,.72)}
+.topbar .w{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;gap:10px}
+.brand{font-weight:800;letter-spacing:-.4px;font-size:17px}
+.brand span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.navlinks{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.navlinks a{color:var(--muted);text-decoration:none;font-size:14px}
+@media (max-width:760px){
+  .topbar .w{flex-wrap:wrap}
+  .navlinks{width:100%;justify-content:center;gap:14px 16px;order:2;padding-top:10px;border-top:1px solid var(--line)}
+  .navlinks a{font-size:13px}
+  .navlinks .btn{order:3;width:100%;text-align:center;margin-top:2px}
+}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#08101f;padding:11px 20px;border-radius:11px;text-decoration:none;font-weight:700;font-size:14px;border:none;cursor:pointer;font-family:inherit}
+.btn.ghost{background:none;border:1px solid var(--line);color:var(--fg)}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:12px;color:var(--muted)}
+.demo{background:linear-gradient(90deg,#f59e0b,#f97316);color:#1a0f00;font-weight:700;font-size:11px;letter-spacing:.4px;padding:3px 9px;border-radius:6px;text-transform:uppercase}
+
+header{background:radial-gradient(900px 500px at 85% -10%,rgba(124,139,255,.28),transparent),radial-gradient(700px 400px at 0% 100%,rgba(47,214,196,.18),transparent),var(--hero);color:#fff}
+.hero{padding:64px 0 40px;text-align:center}
+.hero .badge{margin-bottom:20px;border-color:rgba(255,255,255,.25);color:#cfd6ee}
+.hero h1{font-size:clamp(32px,6.2vw,58px);line-height:1.06;letter-spacing:-1.6px;margin:0 auto 18px;max-width:820px}
+.hero h1 .grad{background:linear-gradient(90deg,#a5b4ff,#5eead4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#c3cbe6;font-size:18px;max-width:600px;margin:0 auto 30px}
+.hero .ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:48px}
+
+.wheel-wrap{position:relative;width:min(340px,80vw);height:min(340px,80vw);margin:0 auto}
+.wheel-glow{position:absolute;inset:-20px;border-radius:50%;background:conic-gradient(from 0deg,var(--accent),var(--accent2),#a78bfa,var(--accent));filter:blur(30px);opacity:.35;animation:spin 14s linear infinite}
+.wheel-svg{position:relative;width:100%;height:100%}
+.wheel-svg text{fill:#fff;font-size:9.5px;font-weight:700;letter-spacing:.3px}
+.wheel-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.wheel-center-inner{width:46%;height:46%;border-radius:50%;background:var(--card2);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.35)}
+.wheel-center-inner b{font-size:15px;color:var(--fg)}
+.wheel-center-inner span{font-size:11px;color:var(--muted);max-width:100px;margin-top:3px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.wheel-glow,.wheel-svg{animation:none}}
+
+.dash{max-width:880px;margin:0 auto;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:22px;backdrop-filter:blur(6px)}
+:root[data-theme="light"] .dash{background:var(--card2);border-color:var(--line)}
+.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.dash-top .demo{}
+.dash-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.dash-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;text-align:left}
+:root[data-theme="light"] .dash-card{background:var(--card);border-color:var(--line)}
+.dash-card .l{font-size:12px;color:#9aa3bd;margin-bottom:6px}
+.dash-card .v{font-size:22px;font-weight:800}
+.dash-card .d{font-size:12px;color:var(--accent2);font-weight:700}
+
+section{padding:64px 0}
+.eyebrow{color:var(--accent);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:1.6px;margin-bottom:8px}
+h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.9px;margin:0 0 14px;line-height:1.15}
+.lead{color:var(--muted);max-width:600px;margin:0 0 32px;font-size:16px}
+.center{text-align:center}
+.center .lead{margin-left:auto;margin-right:auto}
+
+.platforms{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.platforms span{border:1px solid var(--line);border-radius:10px;padding:9px 16px;font-size:13px;color:var(--muted);font-weight:600}
+.plogos{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center}
+.plogo{width:64px;height:64px;border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;justify-content:center;background:var(--card)}
+.plogo svg{width:30px;height:30px}
+.pcards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));max-width:960px;margin:0 auto}
+.pcard{position:relative;display:flex;align-items:center;gap:14px;padding:18px;border-radius:16px;background:var(--card);border:1px solid var(--pc,var(--line));box-shadow:0 0 0 1px rgba(255,255,255,.02),0 0 24px -8px var(--pc,transparent);transition:transform .15s}
+.pcard:hover{transform:translateY(-2px)}
+.pcard .picn{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.04);display:flex;align-items:center;justify-content:center;flex:none}
+.pcard .picn svg{width:26px;height:26px}
+.pcard .ptxt b{display:block;font-size:15px}
+.pcard .ptxt span{display:block;color:var(--muted);font-size:12.5px}
+.pcard .arrow{position:absolute;top:14px;right:14px;width:24px;height:24px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+.note{font-size:13px;color:var(--muted);text-align:center;margin-top:18px;max-width:560px;margin-left:auto;margin-right:auto}
+
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.icon{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#08101f;margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0 0 10px;color:var(--muted);font-size:14.5px}
+.card ul{margin:0;padding-left:18px;color:var(--muted);font-size:13.5px}
+.card ul li{margin:3px 0}
+.card .more{display:inline-block;margin-top:12px;color:var(--accent);font-weight:700;font-size:13px;text-decoration:none}
+
+.alt{background:var(--card)}
+.alt .card{background:var(--bg)}
+
+.metric{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center;position:relative}
+.metric .demo{position:absolute;top:14px;right:14px}
+.metric .v{font-size:clamp(26px,3.4vw,34px);font-weight:800;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.metric .l{color:var(--muted);font-size:13.5px;margin-top:4px}
+
+.case{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.case-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px}
+.case h3{margin:2px 0 2px;font-size:19px}
+.case .ind{color:var(--muted);font-size:13px}
+.case dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13.5px;margin:14px 0}
+.case dt{color:var(--muted)}
+.case dd{margin:0}
+.case .res{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14px;margin-top:10px}
+
+.testi-empty{background:var(--card);border:1px dashed var(--line);border-radius:16px;padding:38px;text-align:center;color:var(--muted)}
+
+.steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.step .n{font-size:26px;font-weight:800;color:var(--accent);margin-bottom:6px}
+.step h3{margin:0 0 6px;font-size:16px}
+.step p{margin:0;color:var(--muted);font-size:13.5px}
+
+.plans{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative}
+.plan.feat{border-color:var(--accent)}
+.plan.feat::before{content:"Most popular";position:absolute;top:-12px;left:20px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#08101f;font-size:11px;font-weight:800;padding:4px 12px;border-radius:99px}
+.plan h3{margin:6px 0 4px;font-size:19px}
+.plan .for{color:var(--muted);font-size:13.5px;margin-bottom:14px}
+.plan ul{margin:0 0 18px;padding-left:18px;color:var(--muted);font-size:14px}
+.plan ul li{margin:5px 0}
+
+form.audit{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:12px;grid-template-columns:1fr 1fr;max-width:760px;margin:0 auto}
+form.audit .full{grid-column:1/-1}
+form.audit label{display:block;font-size:12.5px;color:var(--muted);margin-bottom:5px}
+form.audit input,form.audit select{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:inherit}
+form.audit button{grid-column:1/-1;justify-self:start}
+#auditMsg{grid-column:1/-1;font-size:13.5px;color:var(--accent2);display:none}
+
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:700;font-size:15.5px}
+details p{color:var(--muted);margin:10px 0 0;font-size:14.5px}
+
+.about-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:24px}
+.about-grid .card p{margin:0}
+
+.final{text-align:center;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:24px;padding:56px 24px;color:#08101f}
+.final h2{margin-top:0;color:#08101f}
+.final p{color:rgba(8,16,31,.75);max-width:520px;margin:0 auto 24px}
+.final .ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.final .btn{background:#08101f;color:#fff}
+.final .btn.ghost{background:none;border:1px solid rgba(8,16,31,.35);color:#08101f}
+
+footer{border-top:1px solid var(--line);padding:40px 0 26px}
+.fgrid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:28px}
+.fgrid h4{font-size:13px;margin:0 0 10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.fgrid a{display:block;color:var(--muted);text-decoration:none;font-size:14px;margin:7px 0}
+.fbottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+.social{display:flex;gap:10px}
+.social a{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:border-color .15s,color .15s}
+.social a:hover{border-color:var(--accent);color:var(--accent)}
+.social svg{width:18px;height:18px;fill:currentColor}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="w">
+<div class="brand">ZH <span>Digital</span></div>
+<div class="navlinks">
+<a href="#services">Services</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#about">About</a>
+<a class="btn" href="#audit">Get a Free SEO Audit</a>
+</div>
+</div></div>
+
+<header><div class="w hero">
+<span class="badge">SEO &amp; Digital Growth Agency</span>
+<h1>Turn search traffic into <span class="grad">sustainable growth.</span></h1>
+<p>We help ambitious businesses increase organic visibility, attract qualified customers, and build long-term digital growth through data-driven SEO and performance marketing.</p>
+<div class="ctas"><a class="btn" href="#audit">Get a Free SEO Audit</a><a class="btn ghost" href="#services">Explore Our Services</a></div>
+
+<div class="wheel-wrap">
+<div class="wheel-glow"></div>
+<svg class="wheel-svg" viewBox="0 0 200 200">
+<path id="arc1" d="M100,100 L100,10 A90,90 0 0,1 190,100 Z" fill="var(--accent)"/>
+<path id="arc2" d="M100,100 L190,100 A90,90 0 0,1 100,190 Z" fill="var(--accent2)"/>
+<path id="arc3" d="M100,100 L100,190 A90,90 0 0,1 10,100 Z" fill="#a78bfa"/>
+<path id="arc4" d="M100,100 L10,100 A90,90 0 0,1 100,10 Z" fill="#f59e0b"/>
+<path id="lbl1" d="M100,25 A75,75 0 0,1 175,100" fill="none"/>
+<path id="lbl2" d="M100,175 A75,75 0 0,0 175,100" fill="none"/>
+<path id="lbl3" d="M25,100 A75,75 0 0,0 100,175" fill="none"/>
+<path id="lbl4" d="M25,100 A75,75 0 0,1 100,25" fill="none"/>
+<text text-anchor="middle"><textPath href="#lbl1" startOffset="50%">SEO Strategy</textPath></text>
+<text text-anchor="middle"><textPath href="#lbl2" startOffset="50%">Content &amp; Social</textPath></text>
+<text text-anchor="middle"><textPath href="#lbl3" startOffset="50%">Paid &amp; Local</textPath></text>
+<text text-anchor="middle"><textPath href="#lbl4" startOffset="50%">Web &amp; Growth</textPath></text>
+</svg>
+<div class="wheel-center"><div class="wheel-center-inner"><b>ZH Digital</b><span>10 services, 1 point of contact</span></div></div>
+</div>
+</div></header>
+
+<section><div class="w center">
+<span class="badge" style="margin-bottom:14px"><span style="color:var(--accent2)">●</span> WORKS WITH</span>
+<h2>Integrate With <span class="grad" style="background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent">Leading Platforms</span></h2>
+<p class="lead" style="margin-left:auto;margin-right:auto">Seamlessly familiar with the tools and ecosystems your business already uses.</p>
+<div class="pcards">
+<div class="pcard" style="--pc:#4285F433"><div class="picn"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.6H24v9.1h11.9c-.5 2.8-2.1 5.1-4.4 6.7v5.5h7.1c4.2-3.8 6.5-9.5 6.5-16.7z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.3c-.4-1.3-.7-2.7-.7-4.3s.3-3 .7-4.3v-5.7H4.5C3 17 2 20.4 2 24s1 7 4.5 10l7.3-5.7z"/><path fill="#EA4335" d="M24 10.7c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.2 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg></div><div class="ptxt"><b>Google</b><span>Search &amp; Cloud</span></div><span class="arrow">›</span></div>
+
+<div class="pcard" style="--pc:#4285F433"><div class="picn"><svg viewBox="0 0 48 48"><rect x="4" y="4" width="19" height="19" fill="#F35325"/><rect x="25" y="4" width="19" height="19" fill="#81BC06"/><rect x="4" y="25" width="19" height="19" fill="#05A6F0"/><rect x="25" y="25" width="19" height="19" fill="#FFBA08"/></svg></div><div class="ptxt"><b>Microsoft</b><span>Cloud &amp; Enterprise</span></div><span class="arrow">›</span></div>
+
+<div class="pcard" style="--pc:#0866FF33"><div class="picn"><svg viewBox="0 0 48 48"><path fill="#0866FF" d="M12 24c0-8 4.5-15 11-15 4 0 6.6 2.8 9 7 2.4-4.2 5-7 9-7 6.5 0 11 7 11 15s-4.5 15-11 15c-4 0-6.6-2.8-9-7-2.4 4.2-5 7-9 7-6.5 0-11-7-11-15z"/></svg></div><div class="ptxt"><b>Meta</b><span>Social &amp; Ads</span></div><span class="arrow">›</span></div>
+
+<div class="pcard" style="--pc:#95BF4733"><div class="picn"><svg viewBox="0 0 48 48"><path fill="#95BF47" d="M35 9l-3-1-1-4s-2-1-3 0l-2 2-3-1-2 5-8 3-2 30 24 4 6-33z"/><path fill="#fff" d="M25 20l-2 6s-2-1-4-1c-3 0-3 2-3 2 0 2 5 2 5 6 0 3-3 5-6 5-4 0-6-2-6-2l1-3s2 2 5 2c2 0 3-1 3-2 0-3-4-2-4-6 0-3 2-6 6-6 3 0 5 1 5 1z"/></svg></div><div class="ptxt"><b>Shopify</b><span>Commerce</span></div><span class="arrow">›</span></div>
+
+<div class="pcard" style="--pc:#FF7A5933"><div class="picn"><svg viewBox="0 0 48 48"><circle cx="34" cy="14" r="5" fill="#FF7A59"/><circle cx="16" cy="28" r="8" fill="none" stroke="#FF7A59" stroke-width="4"/><line x1="24" y1="21" x2="30" y2="16" stroke="#FF7A59" stroke-width="4"/></svg></div><div class="ptxt"><b>HubSpot</b><span>CRM &amp; Marketing</span></div><span class="arrow">›</span></div>
+
+<div class="pcard" style="--pc:#FF990033"><div class="picn"><svg viewBox="0 0 48 48"><text x="4" y="28" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#FF9900">a</text><path d="M8 34c8 6 24 6 32 0" fill="none" stroke="#FF9900" stroke-width="3" stroke-linecap="round"/><path d="M36 30l4 1-2 4" fill="#FF9900"/></svg></div><div class="ptxt"><b>Amazon</b><span>Cloud &amp; E-commerce</span></div><span class="arrow">›</span></div>
+
+<div class="pcard" style="--pc:#FA0F0033"><div class="picn"><svg viewBox="0 0 48 48"><path fill="#FA0F00" d="M17 6H6v36zM31 6h11v36zM24 18l8 24h-6l-2-6h-6z"/></svg></div><div class="ptxt"><b>Adobe</b><span>Creative &amp; Design</span></div><span class="arrow">›</span></div>
+</div>
+<p class="note">Platforms &amp; ecosystems we work with — not a client, partner, or endorsement claim. Logos are shown to indicate technical familiarity only.</p>
+</div></section>
+
+<section id="services" class="alt"><div class="w">
+<div class="eyebrow">Services</div>
+<h2>Everything You Need to Grow Organically</h2>
+<p class="lead">Ten focused service lines, one point of contact — from strategy to execution.</p>
+<div class="grid">
+<div class="card"><div class="icon">01</div><h3>SEO Strategy</h3><p>Competitor research and a growth roadmap built around real search opportunity.</p><ul><li>Search opportunity mapping</li><li>Growth roadmap</li></ul></div>
+<div class="card"><div class="icon">02</div><h3>Technical SEO</h3><p>The technical foundation search engines need to crawl and rank your site.</p><ul><li>Core Web Vitals, schema</li><li>Crawl &amp; indexation fixes</li></ul></div>
+<div class="card"><div class="icon">03</div><h3>On-Page SEO</h3><p>Keyword research and content optimization mapped to search intent.</p><ul><li>Metadata &amp; internal links</li><li>Intent mapping</li></ul></div>
+<div class="card"><div class="icon">04</div><h3>Content SEO</h3><p>Topic clusters and briefs that turn content into a ranking asset.</p><ul><li>Content strategy &amp; briefs</li><li>Blog &amp; topic clusters</li></ul></div>
+<div class="card"><div class="icon">05</div><h3>Local SEO</h3><p>Get found by nearby customers on Google Search and Maps.</p><ul><li>Google Business Profile</li><li>Citations &amp; reviews</li></ul></div>
+<div class="card"><div class="icon">06</div><h3>E-commerce SEO</h3><p>Product and category optimization built to convert.</p><ul><li>Product &amp; collection SEO</li><li>Conversion optimization</li></ul></div>
+<div class="card"><div class="icon">07</div><h3>Link Building</h3><p>Ethical outreach and digital PR that earns real authority.</p><ul><li>Digital PR &amp; outreach</li></ul></div>
+<div class="card"><div class="icon">08</div><h3>Website Design</h3><p>Fast, mobile-first websites and landing pages built to convert.</p><ul><li>Business sites &amp; landing pages</li><li>Page speed &amp; UX</li></ul></div>
+<div class="card"><div class="icon">09</div><h3>Social Media</h3><p>Consistent content and community management across platforms.</p><ul><li>Content planning &amp; posts</li><li>Community management</li></ul></div>
+<div class="card"><div class="icon">10</div><h3>Paid Search / PPC</h3><p>Google Ads campaigns built and optimized for conversions.</p><ul><li>Campaign strategy</li><li>Conversion tracking</li></ul></div>
+</div>
+</div></section>
+
+<section id="process" class="alt"><div class="w">
+<div class="eyebrow">Process</div>
+<h2>Our Proven Growth Process</h2>
+<div class="steps">
+<div class="step"><div class="n">01</div><h3>Discover</h3><p>Understand the business, audience and goals.</p></div>
+<div class="step"><div class="n">02</div><h3>Audit</h3><p>Analyze the website, competition and search opportunities.</p></div>
+<div class="step"><div class="n">03</div><h3>Strategize</h3><p>Build a customized growth roadmap.</p></div>
+<div class="step"><div class="n">04</div><h3>Execute</h3><p>Implement SEO, content and technical strategies.</p></div>
+<div class="step"><div class="n">05</div><h3>Measure &amp; Scale</h3><p>Track performance and continuously improve.</p></div>
+</div>
+</div></section>
+
+<section id="pricing"><div class="w">
+<div class="eyebrow">Pricing</div>
+<h2>Simple, Transparent Pricing</h2>
+<p class="lead">Packages scale with scope. Individual services — website builds, Google Business setup, social media management — are also available separately; see below or get in touch for a custom quote.</p>
+<div class="plans">
+<div class="plan"><h3>Starter</h3><div class="price" style="font-size:30px;font-weight:800;margin:4px 0">$150<small style="font-size:13px;color:var(--muted);font-weight:500"> / month</small></div><div class="for">For small businesses</div><ul><li>SEO Audit</li><li>Keyword Research</li><li>On-page Recommendations</li><li>Monthly Report</li></ul><a class="btn ghost" href="#audit">Get Started</a></div>
+<div class="plan feat"><h3>Growth</h3><div class="price" style="font-size:30px;font-weight:800;margin:4px 0">$400<small style="font-size:13px;color:var(--muted);font-weight:500"> / month</small></div><div class="for">For growing businesses</div><ul><li>Technical SEO</li><li>On-page SEO</li><li>Content Strategy</li><li>Keyword Tracking</li><li>Monthly Optimization &amp; Reporting</li></ul><a class="btn" href="#audit">Start Growing</a></div>
+<div class="plan"><h3>Enterprise</h3><div class="price" style="font-size:30px;font-weight:800;margin:4px 0">$800<small style="font-size:13px;color:var(--muted);font-weight:500"> / month</small></div><div class="for">For larger organizations</div><ul><li>Advanced Technical SEO</li><li>Content Program</li><li>Authority Building</li><li>Dedicated Strategist</li><li>Custom Reporting</li></ul><a class="btn ghost" href="#audit">Talk to an Expert</a></div>
+</div>
+<p class="note" style="text-align:left;margin:14px 0 0;max-width:none">No guaranteed #1 rankings — no agency can honestly promise that.</p>
+
+<h2 style="margin-top:48px;font-size:24px">Standalone Services</h2>
+<p class="lead">One-off or ongoing services, priced separately from the monthly SEO packages above.</p>
+<div class="plans">
+<div class="plan"><h3>Website Creation</h3><div class="price" style="font-size:30px;font-weight:800;margin:4px 0">$300<small style="font-size:13px;color:var(--muted);font-weight:500"> one-time</small></div><div class="for">A complete, professional website for your business</div><ul><li>Custom design, up to 5 pages</li><li>Mobile-friendly &amp; fast-loading</li><li>Contact form included</li></ul><a class="btn ghost" href="mailto:mdzayedhossain1418@gmail.com?subject=Website%20Creation%20inquiry">Get Started</a></div>
+<div class="plan"><h3>Google Business Optimization</h3><div class="price" style="font-size:30px;font-weight:800;margin:4px 0">$100<small style="font-size:13px;color:var(--muted);font-weight:500"> one-time</small></div><div class="for">Show up correctly in local Google search &amp; Maps</div><ul><li>Profile setup &amp; verification support</li><li>Category, photos &amp; description optimization</li><li>Local SEO basics</li></ul><a class="btn ghost" href="mailto:mdzayedhossain1418@gmail.com?subject=Google%20Business%20Optimization%20inquiry">Get Started</a></div>
+<div class="plan"><h3>Social Media Management</h3><div class="price" style="font-size:30px;font-weight:800;margin:4px 0">$200<small style="font-size:13px;color:var(--muted);font-weight:500"> / month</small></div><div class="for">Keep your social pages active and consistent</div><ul><li>Content calendar &amp; posting</li><li>Basic graphics &amp; captions</li><li>Monthly performance summary</li></ul><a class="btn ghost" href="mailto:mdzayedhossain1418@gmail.com?subject=Social%20Media%20Management%20inquiry">Get Started</a></div>
+</div>
+</div></section>
+
+<section id="audit" class="alt"><div class="w center">
+<div class="eyebrow">Free Audit</div>
+<h2>Find Out What's Holding Your Website Back.</h2>
+<form class="audit" id="auditForm">
+<div><label>Name</label><input required id="a-name"></div>
+<div><label>Business Name</label><input id="a-biz"></div>
+<div><label>Website URL</label><input id="a-url" placeholder="https://"></div>
+<div><label>Email</label><input required type="email" id="a-email"></div>
+<div><label>Industry</label><input id="a-ind"></div>
+<div><label>Monthly Marketing Budget</label><input id="a-budget"></div>
+<div class="full"><label>Main Goal</label><input id="a-goal"></div>
+<button type="submit" class="btn">Request My Free SEO Audit</button>
+<div id="auditMsg">Thanks — this opens your email app with your details prefilled. Send it and we'll follow up shortly.</div>
+</form>
+</div></section>
+
+<section id="about"><div class="w">
+<div class="eyebrow">About</div>
+<h2>Built for Businesses That Want Sustainable Growth.</h2>
+<p class="lead">We combine technical SEO, content strategy, website optimization and data-driven decision making to help businesses build sustainable organic growth. Available to work with clients globally, remotely.</p>
+<div class="about-grid">
+<div class="card"><h3>Mission</h3><p>Help businesses grow through search that actually converts, not vanity metrics.</p></div>
+<div class="card"><h3>Values</h3><p>Transparency, honest reporting, and no guarantees we can't back up.</p></div>
+<div class="card"><h3>Approach</h3><p>Audit first, strategy second, execution third — always measured.</p></div>
+</div>
+</div></section>
+
+<section class="alt"><div class="w">
+<div class="eyebrow">Why Choose Us</div>
+<h2>A Different Kind of Agency</h2>
+<div class="grid">
+<div class="card"><h3>Data-Driven Strategy</h3><p>Decisions backed by search data, not guesswork.</p></div>
+<div class="card"><h3>Transparent Reporting</h3><p>Reports you can actually read and understand.</p></div>
+<div class="card"><h3>Custom Growth Plans</h3><p>No one-size-fits-all packages.</p></div>
+<div class="card"><h3>Technical Expertise</h3><p>Comfortable deep in code, not just content.</p></div>
+<div class="card"><h3>Clear Communication</h3><p>Direct access, no account-manager layers.</p></div>
+<div class="card"><h3>Long-Term Focus</h3><p>Sustainable growth over short-term tricks.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<div class="eyebrow">FAQ</div>
+<h2>Frequently Asked Questions</h2>
+<details><summary>How long does SEO take?</summary><p>Most sites see meaningful movement in 3–6 months, depending on competition and starting point.</p></details>
+<details><summary>What industries do you work with?</summary><p>Startups, SaaS, e-commerce, local businesses, and growing companies across industries.</p></details>
+<details><summary>Do you guarantee rankings?</summary><p>No — no one can guarantee a specific ranking, since search engines control results. We commit to transparent, measurable work.</p></details>
+<details><summary>Do you work internationally?</summary><p>Yes, we work with clients remotely worldwide.</p></details>
+<details><summary>What does your SEO process include?</summary><p>Discovery, audit, strategy, execution, and ongoing measurement — see our Process section above.</p></details>
+<details><summary>How do you report results?</summary><p>Regular, plain-language reports showing what changed and what's next.</p></details>
+<details><summary>Can you work with an existing marketing team?</summary><p>Yes, we can plug into an existing team or work independently.</p></details>
+<details><summary>Do you offer one-time SEO audits?</summary><p>Yes — the Starter package includes a standalone audit.</p></details>
+</div></section>
+
+<section><div class="w">
+<div class="final">
+<h2>Ready to Turn Search Into Growth?</h2>
+<p>Let's identify your biggest growth opportunities and build a strategy around them.</p>
+<div class="ctas"><a class="btn" href="#audit">Get Free SEO Audit</a><a class="btn ghost" href="mailto:mdzayedhossain1418@gmail.com?subject=Consultation%20request">Book a Consultation</a></div>
+</div>
+</div></section>
+
+<footer><div class="w">
+<div class="fgrid">
+<div><div class="brand" style="margin-bottom:8px">ZH <span>Digital</span></div><p style="color:var(--muted);font-size:13.5px">SEO &amp; digital growth agency for ambitious businesses.</p></div>
+<div><h4>Services</h4><a href="#services">SEO Strategy</a><a href="#services">Technical SEO</a><a href="#services">Content SEO</a><a href="#services">Paid Search</a></div>
+<div><h4>Company</h4><a href="#about">About</a><a href="#case-studies">Case Studies</a><a href="#pricing">Pricing</a><a href="#audit">Contact</a></div>
+<div><h4>Contact</h4><a href="mailto:mdzayedhossain1418@gmail.com">mdzayedhossain1418@gmail.com</a></div>
+<div><h4>Connect</h4>
+<div class="social">
+<a href="https://www.linkedin.com/in/zayed-shishir-500b51312" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg></a>
+<a href="https://x.com/zayed232132" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.3l8.1-9.3L1 2h7.2l5 6.6zm-1.2 18h1.7L7 4h-1.8z"/></svg></a>
+<a href="https://www.instagram.com/shi_shi.r" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 2 .25 2.47.42.6.23 1.03.5 1.48.96.46.45.73.88.96 1.48.17.47.37 1.3.42 2.47.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 2-.42 2.47-.23.6-.5 1.03-.96 1.48-.45.46-.88.73-1.48.96-.47.17-1.3.37-2.47.42-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-2-.25-2.47-.42-.6-.23-1.03-.5-1.48-.96-.46-.45-.73-.88-.96-1.48-.17-.47-.37-1.3-.42-2.47C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-2 .42-2.47.23-.6.5-1.03.96-1.48.45-.46.88-.73 1.48-.96.47-.17 1.3-.37 2.47-.42C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-.96.04-1.48.2-1.82.34-.46.18-.79.39-1.13.74-.35.34-.56.67-.74 1.13-.14.34-.3.86-.34 1.82C3.15 8.34 3.15 8.71 3.15 12s0 3.66.07 4.9c.04.96.2 1.48.34 1.82.18.46.39.79.74 1.13.34.35.67.56 1.13.74.34.14.86.3 1.82.34 1.24.06 1.6.07 4.76.07s3.52 0 4.76-.07c.96-.04 1.48-.2 1.82-.34.46-.18.79-.39 1.13-.74.35-.34.56-.67.74-1.13.14-.34.3-.86.34-1.82.06-1.24.07-1.6.07-4.9s0-3.66-.07-4.9c-.04-.96-.2-1.48-.34-1.82a2.94 2.94 0 0 0-.74-1.13 2.94 2.94 0 0 0-1.13-.74c-.34-.14-.86-.3-1.82-.34C15.52 4 15.15 4 12 4zm0 3.7a4.3 4.3 0 1 1 0 8.6 4.3 4.3 0 0 1 0-8.6zm0 1.8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm4.48-2.02a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+<a href="https://www.facebook.com/rk.zafore" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.4h2.8l.42-3.26h-3.22V8.24c0-.94.26-1.58 1.6-1.58h1.72V3.75C16.5 3.7 15.5 3.6 14.34 3.6c-2.4 0-4.04 1.46-4.04 4.15v2.6H7.5v3.25h2.8V22z"/></svg></a>
+</div>
+</div>
+</div>
+<div class="fbottom"><span>Founded by Md Zayed Hossain · © 2026 ZH Digital. All rights reserved.</span><span>Privacy Policy · Terms of Service</span></div>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ZH Digital","url":"https://zhdigital.example.com/","email":"mdzayedhossain1418@gmail.com","description":"SEO and digital growth agency."}
+</script>
+
+<script>
+document.getElementById('auditForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var g = function(id){ return document.getElementById(id).value.trim(); };
+  var body = "Name: "+g('a-name')+"\nBusiness: "+g('a-biz')+"\nWebsite: "+g('a-url')+"\nEmail: "+g('a-email')+"\nIndustry: "+g('a-ind')+"\nBudget: "+g('a-budget')+"\nGoal: "+g('a-goal');
+  var link = "mailto:mdzayedhossain1418@gmail.com?subject="+encodeURIComponent("Free SEO Audit Request — "+(g('a-biz')||g('a-name')))+"&body="+encodeURIComponent(body);
+  document.getElementById('auditMsg').style.display = 'block';
+  window.location.href = link;
+});
+</script>
+</body>
+</html>
